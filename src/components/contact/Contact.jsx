@@ -50,13 +50,13 @@ export const Contact = () => {
           className="phoneSVG"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
-          transition={{ delay: 3, duration: 1 }}
+          transition={{ delay: 2, duration: 1 }}
         >
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <motion.path
               initial={{ pathLength: 0 }}
               animate={isInView && { pathLength: 1 }}
-              transition={{ duration: 3 }}
+              transition={{ duration: 2 }}
               d="M13.5 2C13.5 2 15.8335 2.21213 18.8033 5.18198C21.7731 8.15183 21.9853 10.4853 21.9853 10.4853"
               strokeWidth="0.3"
               strokeLinecap="round"
@@ -64,7 +64,7 @@ export const Contact = () => {
             <motion.path
               initial={{ pathLength: 0 }}
               animate={isInView && { pathLength: 1 }}
-              transition={{ duration: 3 }}
+              transition={{ duration: 2 }}
               d="M14.207 5.53564C14.207 5.53564 15.197 5.81849 16.6819 7.30341C18.1668 8.78834 18.4497 9.77829 18.4497 9.77829"
               strokeWidth="0.3"
               strokeLinecap="round"
@@ -72,7 +72,7 @@ export const Contact = () => {
             <motion.path
               initial={{ pathLength: 0 }}
               animate={isInView && { pathLength: 1 }}
-              transition={{ duration: 3 }}
+              transition={{ duration: 2 }}
               d="M15.1007 15.0272L14.5569 14.5107L15.1007 15.0272ZM15.5562 14.5477L16.1 15.0642H16.1L15.5562 14.5477ZM17.9728 14.2123L17.5987 
                 14.8623H17.5987L17.9728 14.2123ZM19.8833 15.312L19.5092 15.962L19.8833 15.312ZM20.4217 18.7584L20.9655 19.2749L20.4217 18.7584ZM19.0011 
                 20.254L18.4573 19.7375L19.0011 20.254ZM17.6763 20.9631L17.7499 21.7095L17.6763 20.9631ZM7.81536 16.4752L8.35915 15.9587L7.81536 
@@ -115,7 +115,7 @@ export const Contact = () => {
         <motion.form
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 1 }}
+          transition={{ delay: 3, duration: 1 }}
         >
           <input type="text" required placeholder="Name" />
           <input type="email" required placeholder="Email" />
