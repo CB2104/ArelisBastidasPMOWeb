@@ -1,40 +1,51 @@
-.navbar{
-    height: 100px;
-    display: flex; //Revisar si es correcto, sino eliminar (tapa el logo)
-    
-    .wrapper{
-        min-width: 1366px;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between; //Sino se arregla el logo, cambiar por space-around
-        height: 100%;
+@use "../../App.scss" as app;
 
-        span{
-            font-weight: bold;
-        }
+.navbar {
+  height: 100px;
+   //Revisar si es correcto, sino eliminar (tapa el logo - display: flex)
 
-        .social{
-            display: flex;
-            gap: 20px;
-
-            img{
-                width: 18px;
-                height: 18px; 
-            }
-        }
-    }
-}
-
-.course{
-    height: 100vh;
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; //Sino se arregla el logo, cambiar por space-around
+    height: 100%;
 
-    .box{
-        width: 200px;
-        height: 200px;
-        background-color: white;
+    @include app.mobile {
+        justify-content: flex-end;
+        padding: 20px;
     }
+
+    span {
+      font-weight: bold;
+
+      @include app.mobile {
+        display: none;
+      }
+    }
+
+    .social {
+      display: flex;
+      gap: 20px;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}
+
+.course {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+  }
 }
