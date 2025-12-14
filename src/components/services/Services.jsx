@@ -22,7 +22,14 @@ const variants = {
 export const Services = () => {
   const ref = useRef();
 
+  const isMobile = window.innerWidth <= 700;
   const isInView = useInView(ref, { margin: "-100px" });
+
+  // const isInView = useInView(ref, {
+  //   once: false,
+  //   amount: 0.3,
+  // });
+
 
   return (
     <motion.div
@@ -30,7 +37,7 @@ export const Services = () => {
       variants={variants}
       initial="initial"
       ref={ref}
-      animate={"animate"} //Volver a poner 'isInView &&'
+      animate={isMobile ? "animate" : (isInView ? "animate" : "initial")} //Volver a poner 'isInView &&'
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
