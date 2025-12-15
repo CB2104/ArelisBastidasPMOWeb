@@ -1,3 +1,5 @@
+@use '../src/components/Colors.scss' as c;
+
 html{
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
@@ -10,8 +12,8 @@ html{
 }
 
 body{
-    background-color: #0c0c1d; //para el background de mi tia
-    color: lightgrey;
+    background-color: c.$bgPrimary; //para el background de mi tia
+    color: c.$DefaultFont;
 }
 
 a{

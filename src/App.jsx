@@ -5,6 +5,8 @@ import { Services } from "./components/services/Services";
 import { Portfolio } from "./components/portfolio/Portfolio";
 import { Contact } from "./components/contact/Contact";
 import { Cursor } from "./components/cursor/Cursor";
+import { Footer } from "./components/footer/Footer";
+import { HeroServ } from "./components/heroServ/HeroServ";
 import "./App.scss";
 
 const App = () => {
@@ -15,19 +17,28 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
+      <section>
+        <HeroServ />
+      </section>
       <section id="Services">
         <Parallax type="services" />
       </section>
       <section>
-        <Services/>
+        <Services />
       </section>
       <section id="Portfolio">
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
-      {/* <section id="Contact">
+      <section id="Contact">
         <Contact />
-      </section> */}
+      </section>
+      <section
+        id="about"
+        style={{ height: "auto", minHeight: "auto", scrollSnapAlign: "end" }}
+      >
+        <Footer />
+      </section>
       {/* <Test/>
     <Test/> */}
     </div>

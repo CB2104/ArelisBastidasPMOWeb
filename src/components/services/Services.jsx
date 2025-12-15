@@ -13,8 +13,8 @@ const variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1,
-      staggerChildren: 0.1,
+      duration: 2,
+      staggerChildren: 0.25,
     },
   },
 };
@@ -37,7 +37,7 @@ export const Services = () => {
       variants={variants}
       initial="initial"
       ref={ref}
-      animate={isMobile ? "animate" : (isInView ? "animate" : "initial")} //Volver a poner 'isInView &&'
+      animate={isMobile ? "animate" : (isInView ? "animate" : "initial")} 
     >
       <motion.div className="textContainer" variants={variants}>
         <p>

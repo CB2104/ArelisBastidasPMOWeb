@@ -1,11 +1,12 @@
 @use "../../App.scss" as app;
+@use '../Colors.scss' as c;
 
 .navbar {
   height: 100px;
    //Revisar si es correcto, sino eliminar (tapa el logo - display: flex)
 
   .wrapper {
-    max-width: 1366px;
+    max-width: 1166px;
     margin: auto;
     display: flex;
     align-items: center;
