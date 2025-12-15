@@ -1,13 +1,15 @@
 import { Navbar } from "./components/navbar/navBar";
 import { Hero } from "./components/hero/Hero";
+import { HeroServ } from "./components/heroServ/HeroServ";
 import { Parallax } from "./components/parallax/Parallax";
-import { Services } from "./components/services/Services";
+import { Projection } from "./components/projection/projection";
+import { HeroComp } from "./components/heroComp/HeroComp";
 import { Portfolio } from "./components/portfolio/Portfolio";
 import { Contact } from "./components/contact/Contact";
 import { Cursor } from "./components/cursor/Cursor";
 import { Footer } from "./components/footer/Footer";
-import { HeroServ } from "./components/heroServ/HeroServ";
 import "./App.scss";
+import { Sections } from "./components/sections/Sections";
 
 const App = () => {
   return (
@@ -24,7 +26,13 @@ const App = () => {
         <Parallax type="services" />
       </section>
       <section>
-        <Services />
+        <Projection />
+      </section>
+      <section>
+        <HeroComp />
+      </section>
+      <section>
+        <Sections />
       </section>
       <section id="Portfolio">
         <Parallax type="portfolio" />

@@ -26,14 +26,14 @@ const textVariants = {
 
 const sliderVariants = {
   initial: {
-    x: 0,
+    x: "200%",
   },
   animate: {
-    x: "-220%",
+    x: "-900%",
     transition: {
       repeat: Infinity,
       repearType: "Mirror",
-      duration: 20,
+      duration: 30,
     },
   },
 };
@@ -97,7 +97,7 @@ export const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        PMO Officer Scrum Master
+                 PMO Officer | Scrum Master | Project Manager
       </motion.div>
       <div className="imageContainer">
         <img src="../../../public/Hero-Arelis.png" alt="" />

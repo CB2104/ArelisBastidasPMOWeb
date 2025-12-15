@@ -1,0 +1,118 @@
+@use "../../App.scss" as app;
+@use "../Colors.scss" as c;
+
+.services {
+  background: linear-gradient(180deg, c.$bgPrimary, c.$bgSecundary);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .listContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin: auto 100px;
+
+    @include app.mobile {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .box {
+      position: relative;
+      padding: 50px;
+      border: 0.5px solid c.$subProyection;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: background 0.5s, transform 0.5s;
+
+      @include app.mobile {
+        border: none;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+      }
+
+      svg {
+        margin: auto;
+        width: 150px;
+        height: 100px;
+        fill: c.$DefaultFont;
+        margin-bottom: 20px;
+        text-align: center;
+        transition: transform 0.5s ease;
+
+        @include app.mobile {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: bolder;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-weight: 200;
+        @include app.mobile {
+          display: none;
+        }
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 20px;
+        padding: 20px;
+        border: 1px solid c.$border;
+        border-radius: 10px;
+        background-color: transparent;
+        color: c.$PrimaryFont;
+        margin-right: 20px;
+        font-weight: 300;
+        cursor: pointer;
+        font-size: 14px;
+        margin: auto;
+
+        @include app.mobile {
+          background-color: transparent;
+          border: 1px solid c.$btnBg;
+          border-radius: 5px;
+          color: c.$btnBg;
+          width: 50%;
+          padding: 5px;
+        }
+
+        svg {
+          flex-shrink: 0;
+          margin: auto;
+          width: 24px;
+          height: 24px;
+          fill: white;
+          bottom: 0;
+          transition: transform 0.3s ease;
+        }
+      }
+      .button:hover {
+        svg {
+          transform: scale(1.3);
+        }
+      }
+    }
+
+    .box:hover {
+      background-color: c.$bgSecundary;
+      box-shadow: 4px 4px 0px c.$PrimaryFont;
+      transition: transform 0.2s, box-shadow 0.2s;
+      transform: translateY(-10px);
+    }
+  }
+}

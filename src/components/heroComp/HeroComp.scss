@@ -1,21 +1,21 @@
 @use "../../App.scss" as app;
 @use "../Colors.scss" as c;
 
-.hero2 {
+.heroComp {
   height: calc(100vh);
   overflow: hidden;
   background: linear-gradient(180deg, c.$bgPrimary, c.$bgSecundary);
   position: relative;
 
-  .wrapper2 {
+  .compWrapper {
     max-width: 1166px;
     height: 100%;
     margin: auto;
 
-    .textContainer2 {
+    .compContainer {
       width: 50%;
       height: 100%;
-      margin-left: auto;
+      margin-right: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -43,10 +43,19 @@
         }
       }
 
-      .titleH3 {
-        font-size: 15px;
-        justify-items: center;
-        font-weight: 200;
+      .box {
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 10px;
+        border-left: 5px solid c.$SecundaryFont;
+        .titleH3 {
+          font-size: 15px;
+          justify-items: center;
+          font-weight: 200;
+        }
       }
 
       .buttons2 {
@@ -89,13 +98,13 @@
     }
   }
 
-  .imageContainer2 {
+  .imageComp {
     max-width: 40%;
     width: 40%;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
 
     @include app.mobile {
       height: 50%;
