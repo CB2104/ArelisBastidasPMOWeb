@@ -2,7 +2,7 @@ import { Navbar } from "./components/navbar/Navbar";
 import { Hero } from "./components/hero/Hero";
 import { HeroServ } from "./components/heroServ/HeroServ";
 import { Parallax } from "./components/parallax/Parallax";
-import { Projection } from "./components/projection/projection";
+import { Projection } from "./components/projection/Projection";
 import { HeroComp } from "./components/heroComp/HeroComp";
 import { Contact } from "./components/contact/Contact";
 import { Cursor } from "./components/cursor/Cursor";
