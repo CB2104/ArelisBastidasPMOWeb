@@ -26,7 +26,7 @@ export const HeroComp = () => {
   return (
     <div className="heroComp">
       <div className="imageComp">
-        <img src="/HeroComp.jpg" alt="" />
+        <img src="/heroComp.jpg" alt="" />
       </div>
       <div className="compWrapper">
         <motion.div
