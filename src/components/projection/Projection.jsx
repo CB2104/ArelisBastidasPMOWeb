@@ -47,7 +47,7 @@ export const Projection = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/public/people.webp" />
+          <img src="/people.webp" />
           <h1>
             <motion.b whileHover={{ color: "orange" }}>Imagina</motion.b> un
             futuro donde cada proyecto

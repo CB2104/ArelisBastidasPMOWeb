@@ -5,16 +5,10 @@ export const Footer = () => {
     <footer>
       <div className="row">
         <div className="col">
-          <img
-            src="../../../public/LogoArelisBastidas.png"
-            alt=""
-          />
+          <img src="/LogoArelisBastidas.png" alt="" />
+          <p>Somos tu vision, al siguiente nivel.</p>
           <p>
-              Somos tu vision, al siguiente nivel. 
-          </p>
-          <p>
-              Conectando tus ideas y creando
-              experiencias digitales inolvidables.
+            Conectando tus ideas y creando experiencias digitales inolvidables.
           </p>
           <br />
           <div className="social-icons">

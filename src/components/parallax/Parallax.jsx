@@ -30,7 +30,7 @@ export const Parallax = ({ type }) => {
       <motion.div className="mountains"></motion.div>
       <motion.div className="planets" style={{ 
         y: yBg,
-        backgroundImage: `url(${type==='services' ? '/public/planets.png' : '/public/sun.png'})` }}></motion.div>
+        backgroundImage: `url(${type==='services' ? '/planets.png' : '/sun.png'})` }}></motion.div>
       <motion.div className="stars" style={{ x: yBg }}></motion.div>
     </div>
   );

@@ -34,7 +34,7 @@ export const HeroServ = () => {
   return (
     <div className="hero2">
       <div className="imageContainer2">
-        <img src="../../../public/heroServ.jpg" alt="" />
+        <img src="/heroServ.jpg" alt="" />
       </div>
       <div className="wrapper2">
         <motion.div
