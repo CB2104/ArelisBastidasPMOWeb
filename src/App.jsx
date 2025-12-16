@@ -1,4 +1,4 @@
-import { Navbar } from "./components/navbar/navBar";
+import { Navbar } from "./components/navbar/Navbar";
 import { Hero } from "./components/hero/Hero";
 import { HeroServ } from "./components/heroServ/HeroServ";
 import { Parallax } from "./components/parallax/Parallax";
