@@ -4,25 +4,27 @@ import { HeroServ } from "./components/heroServ/HeroServ";
 import { Parallax } from "./components/parallax/Parallax";
 import { Projection } from "./components/projection/projection";
 import { HeroComp } from "./components/heroComp/HeroComp";
-import { Portfolio } from "./components/portfolio/Portfolio";
 import { Contact } from "./components/contact/Contact";
 import { Cursor } from "./components/cursor/Cursor";
 import { Footer } from "./components/footer/Footer";
-import "./App.scss";
 import { Sections } from "./components/sections/Sections";
+import { HeroResult } from "./components/heroResult/HeroResult";
+import { HeroImpl } from "./components/heroImpl/HeroImpl";
+import { ArePortfolio } from "./components/arePortfolio/ArePortfolio";
+import "./App.scss";
 
 const App = () => {
   return (
     <div>
       <Cursor />
-      <section id="Homepage">
+      <section id="Inicio">
         <Navbar />
         <Hero />
       </section>
-      <section>
+      {/* <section>
         <HeroServ />
       </section>
-      <section id="Services">
+      <section id="Objetivos">
         <Parallax type="services" />
       </section>
       <section>
@@ -34,19 +36,25 @@ const App = () => {
       <section>
         <Sections />
       </section>
-      <section id="Portfolio">
+      <section>
+        <HeroResult />
+      </section>
+      <section>
+        <HeroImpl />
+      </section>
+      <section id="Enfoque">
         <Parallax type="portfolio" />
       </section>
-      <Portfolio />
-      <section id="Contact">
+      <ArePortfolio />
+      <section id="Contacto">
         <Contact />
       </section>
       <section
-        id="about"
+        id="Informacion"
         style={{ height: "auto", minHeight: "auto", scrollSnapAlign: "end" }}
       >
         <Footer />
-      </section>
+      </section> */}
       {/* <Test/>
     <Test/> */}
     </div>

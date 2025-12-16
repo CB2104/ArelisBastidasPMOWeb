@@ -3,7 +3,7 @@
 html{
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-}
+    }
 *{
     padding: 0;
     margin: 0;
@@ -14,6 +14,7 @@ html{
 body{
     background-color: c.$bgPrimary; //para el background de mi tia
     color: c.$DefaultFont;
+    overflow-x: hidden;
 }
 
 a{

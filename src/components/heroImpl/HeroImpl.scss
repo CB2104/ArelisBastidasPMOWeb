@@ -1,24 +1,25 @@
 @use "../../App.scss" as app;
 @use "../Colors.scss" as c;
 
-.hero {
-  height: calc(100vh - 100px);
+.heroImpl {
+  height: calc(100vh);
   overflow: hidden;
   background: linear-gradient(180deg, c.$bgPrimary, c.$bgSecundary);
   position: relative;
 
-  .wrapper {
-    max-width: 1366px;
+  .ImplWrapper {
+    max-width: 1166px;
     height: 100%;
     margin: auto;
 
-    .textContainer {
-      width: 50%;
+    .ImplContainer {
+      width: 56%;
       height: 100%;
+      margin-right: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 30px;
+      gap: 50px;
 
       @include app.mobile {
         height: 50%;
@@ -28,42 +29,57 @@
         text-align: center;
       }
 
-      h2 {
-        font-size: 20px;
+      .link {
+        display: inline-flex;
+        align-items: center;
+        gap: 1px;
+        font-size: 22px;
         color: c.$SecundaryFont;
-        letter-spacing: 2px;
 
-        @include app.mobile {
-          font-size: 16px;
+        svg {
+          flex-shrink: 0;
+          margin-right: 10px;
+          width: 24px;
+          height: 24px;
+          fill: white;
+          bottom: 0;
+          transition: transform 0.3s ease;
         }
       }
 
-      h1 {
-        font-size: 50px;
+      .titleH1 {
+        font-size: 40px;
 
         @include app.mobile {
-          font-size: 20px;
+          font-size: 36px;
         }
       }
 
-      h3{
-        justify-items: center;
-
-        @include app.mobile {
+      .box {
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 10px;
+        border-left: 5px solid c.$SecundaryFont;
+        .titleH3 {
           font-size: 15px;
-          font-weight: lighter;
+          justify-items: center;
+          font-weight: 200;
         }
       }
 
-      .buttons {
+      .buttons2 {
         padding-top: 15px;
         position: relative;
         z-index: 300;
-        .button {
+        .button2 {
           display: inline-flex;
           align-items: center;
           gap: 10px;
           padding: 15px 20px;
+          padding: 20px;
           border: 1px solid c.$border;
           border-radius: 10px;
           background-color: transparent;
@@ -72,7 +88,7 @@
           font-weight: 300;
           cursor: pointer;
 
-          svg{
+          svg {
             width: 24px;
             height: 24px;
             fill: white;
@@ -81,9 +97,9 @@
             transition: transform 0.3s ease;
           }
         }
-        .button:hover{
-          svg{
-            transform: scale(1.3)
+        .button2:hover {
+          svg {
+            transform: scale(1.3);
           }
         }
       }
@@ -94,7 +110,9 @@
     }
   }
 
-  .imageContainer {
+  .imageComp {
+    max-width: 40%;
+    width: 40%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -107,20 +125,10 @@
       bottom: 0;
     }
 
-    img{
-        width: 75%;
-        height: 100%;
-        object-fit: cover;
+    img {
+      width: 115%;
+      height: 100%;
+      object-fit: cover;
     }
-  }
-
-  .slidingTextContainer {
-    position: absolute;
-    font-size: 45vh;
-    bottom: -120px;
-    white-space: nowrap;
-    color: c.$ShadowFont;
-    width: 50%;
-    font-weight: bold;
   }
 }

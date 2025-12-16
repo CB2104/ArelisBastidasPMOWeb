@@ -13,7 +13,7 @@ const secVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.4,
+      duration: 0.8,
       staggerChildren: 0.15,
     },
   },

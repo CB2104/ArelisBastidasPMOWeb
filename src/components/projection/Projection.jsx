@@ -13,7 +13,7 @@ const variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 2,
+      duration: 1,
       staggerChildren: 0.25,
     },
   },
@@ -57,7 +57,7 @@ export const Projection = () => {
           <h1>
             {" "}
             se entrega
-            <motion.b whileHover={{ color: "orange" }}> a tiempo</motion.b>y
+            <motion.b whileHover={{ color: "orange" }}> a tiempo</motion.b> y
             dentro del{" "}
             <motion.b whileHover={{ color: "orange" }}> presupuesto.</motion.b>
           </h1>

@@ -1,20 +1,21 @@
 @use "../../App.scss" as app;
 @use "../Colors.scss" as c;
 
-.hero {
-  height: calc(100vh - 100px);
+.resultHero {
+  height: 100vh;
   overflow: hidden;
   background: linear-gradient(180deg, c.$bgPrimary, c.$bgSecundary);
   position: relative;
 
-  .wrapper {
-    max-width: 1366px;
+  .wrapper3 {
+    max-width: 1166px;
     height: 100%;
     margin: auto;
 
-    .textContainer {
+    .textContainer3 {
       width: 50%;
       height: 100%;
+      margin-left: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -31,39 +32,32 @@
       h2 {
         font-size: 20px;
         color: c.$SecundaryFont;
-        letter-spacing: 2px;
+      }
+
+      .resultH1 {
+        font-size: 40px;
 
         @include app.mobile {
-          font-size: 16px;
+          font-size: 36px;
         }
       }
 
-      h1 {
-        font-size: 50px;
-
-        @include app.mobile {
-          font-size: 20px;
-        }
-      }
-
-      h3{
+      .resultH3 {
+        font-size: 18px;
         justify-items: center;
-
-        @include app.mobile {
-          font-size: 15px;
-          font-weight: lighter;
-        }
+        font-weight: 200;
       }
 
-      .buttons {
+      .buttons3 {
         padding-top: 15px;
         position: relative;
         z-index: 300;
-        .button {
+        .button3 {
           display: inline-flex;
           align-items: center;
           gap: 10px;
           padding: 15px 20px;
+          padding: 20px;
           border: 1px solid c.$border;
           border-radius: 10px;
           background-color: transparent;
@@ -72,7 +66,7 @@
           font-weight: 300;
           cursor: pointer;
 
-          svg{
+          svg {
             width: 24px;
             height: 24px;
             fill: white;
@@ -81,9 +75,9 @@
             transition: transform 0.3s ease;
           }
         }
-        .button:hover{
-          svg{
-            transform: scale(1.3)
+        .button3:hover {
+          svg {
+            transform: scale(1.3);
           }
         }
       }
@@ -94,11 +88,12 @@
     }
   }
 
-  .imageContainer {
+  .imageContainer3 {
+    width: 40%;
     height: 100%;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
 
     @include app.mobile {
       height: 50%;
@@ -107,20 +102,10 @@
       bottom: 0;
     }
 
-    img{
-        width: 75%;
-        height: 100%;
-        object-fit: cover;
+    img {
+      width: 115%;
+      height: 100%;
+      object-fit: cover;
     }
-  }
-
-  .slidingTextContainer {
-    position: absolute;
-    font-size: 45vh;
-    bottom: -120px;
-    white-space: nowrap;
-    color: c.$ShadowFont;
-    width: 50%;
-    font-weight: bold;
   }
 }
