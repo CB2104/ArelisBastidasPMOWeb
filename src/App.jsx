@@ -21,7 +21,7 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      {/* <section>
+      <section>
         <HeroServ />
       </section>
       <section id="Objetivos">
@@ -54,7 +54,7 @@ const App = () => {
         style={{ height: "auto", minHeight: "auto", scrollSnapAlign: "end" }}
       >
         <Footer />
-      </section> */}
+      </section>
       {/* <Test/>
     <Test/> */}
     </div>
