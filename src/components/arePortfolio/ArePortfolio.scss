@@ -13,8 +13,8 @@
     font-size: 36px;
 
     @include app.mobile {
-      padding-top: calc(100vh - 100px);
-      font-size: 24px;
+      padding-top: 16%;
+      font-size: 20px;
     }
 
     .progressBar {
@@ -31,6 +31,9 @@
     height: 100%;
     overflow: hidden;
 
+    @include app.mobile {
+    }
+
     .wrapper {
       max-width: 1366px;
       height: 100%;
@@ -42,6 +45,9 @@
 
       @include app.mobile {
         flex-direction: column;
+        height: 75%;
+        position: relative;
+        background-color: #0c0c1d;
       }
 
       .imageContainer {
@@ -71,6 +77,7 @@
         gap: 50px;
 
         @include app.mobile {
+          flex: 0 auto;
           transform: none !important;
           padding: 10px;
           align-items: center;

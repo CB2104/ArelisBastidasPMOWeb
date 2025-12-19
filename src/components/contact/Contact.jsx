@@ -55,7 +55,8 @@ export const Contact = () => {
         <motion.h1 variants={variants}>Trabajemos Juntos!</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>E-Mail</h2>
-          <span>arelisbastidas2023@gmail.com</span><br />
+          <span>arelisbastidas2023@gmail.com</span>
+          <br />
           <span>info@arelisbastidas.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>

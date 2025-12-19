@@ -12,6 +12,12 @@
     height: 100%;
     margin: auto;
 
+    @include app.mobile {
+      max-height: 100vh;
+      max-width: 90vw;
+      justify-content: center;
+    }
+
     .ImplContainer {
       width: 56%;
       height: 100%;
@@ -22,9 +28,9 @@
       gap: 50px;
 
       @include app.mobile {
-        height: 50%;
+        height: 70%;
         width: 100%;
-        gap: 20px;
+        gap: 2.5rem;
         align-items: center;
         text-align: center;
       }
@@ -35,6 +41,11 @@
         gap: 1px;
         font-size: 22px;
         color: c.$SecundaryFont;
+
+        @include app.mobile{
+          font-size: 20px;
+          padding: 12px;
+        }
 
         svg {
           flex-shrink: 0;
@@ -51,7 +62,7 @@
         font-size: 40px;
 
         @include app.mobile {
-          font-size: 36px;
+          font-size: 20px;
         }
       }
 
@@ -63,10 +74,19 @@
         gap: 20px;
         padding-left: 10px;
         border-left: 5px solid c.$SecundaryFont;
+
+        @include app.mobile {
+          gap: 16px;
+        }
+
         .titleH3 {
           font-size: 15px;
           justify-items: center;
           font-weight: 200;
+
+          @include app.mobile {
+            font-size: 12px;
+          }
         }
       }
 
@@ -74,6 +94,14 @@
         padding-top: 15px;
         position: relative;
         z-index: 300;
+
+        @include app.mobile {
+          display: flex;
+          flex-direction: row;
+          width: 80%;
+          gap: 10px;
+        }
+
         .button2 {
           display: inline-flex;
           align-items: center;
@@ -87,6 +115,15 @@
           margin-right: 20px;
           font-weight: 300;
           cursor: pointer;
+
+          @include app.mobile {
+            font-size: 12px;
+            height: 20%;
+            width: 50%;
+            gap: 10px;
+            justify-content: center;
+            margin: auto;
+          }
 
           svg {
             width: 24px;
@@ -119,16 +156,27 @@
     right: 0;
 
     @include app.mobile {
-      height: 50%;
-      width: 100%;
-      top: unset;
+      height: 30%;
+      max-width: 100%;
+      width: 250%;
       bottom: 0;
+      top: unset;
     }
 
     img {
       width: 115%;
       height: 100%;
       object-fit: cover;
+
+      @include app.mobile {
+        bottom: auto;
+        width: 100vw;
+        object-fit: cover;
+        object-position: center;
+        box-shadow: 0px -5px 0px 0px rgba(255, 255, 255, 0.4);
+        -webkit-box-shadow: 0px -5px 0px 0px rgba(255, 255, 255, 0.4);
+        -moz-box-shadow: 0px -5px 0px 0px rgba(255, 255, 255, 0.4);
+      }
     }
   }
 }

@@ -57,6 +57,11 @@
       top: -20%;
       z-index: -1;
 
+      @include app.mobile {
+        top: 0%;
+        width: 9rem;
+      }
+
       svg {
         width: 200%;
         height: 200%;

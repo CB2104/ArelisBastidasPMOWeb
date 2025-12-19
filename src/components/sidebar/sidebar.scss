@@ -10,6 +10,10 @@
   position: fixed;
   z-index: 999; //Pendiente con eso
 
+  @include app.mobile {
+    zoom: 0.8;
+  }
+
   .bg {
     position: fixed;
     top: 0;
@@ -37,6 +41,7 @@
 
         @include app.mobile {
           font-size: 20px;
+          zoom: 1.3;
         }
       }
     }
