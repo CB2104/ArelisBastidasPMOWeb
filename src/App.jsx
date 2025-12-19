@@ -13,10 +13,13 @@ import { HeroImpl } from "./components/heroImpl/HeroImpl";
 import { ArePortfolio } from "./components/arePortfolio/ArePortfolio";
 import "./App.scss";
 
+import { Services } from "./components/services/Services"
+
+
 const App = () => {
   return (
     <div>
-      <Cursor />
+      {/* <Cursor /> */}
       <section id="Inicio">
         <Navbar />
         <Hero />

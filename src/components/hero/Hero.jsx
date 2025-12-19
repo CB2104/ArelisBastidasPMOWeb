@@ -76,7 +76,7 @@ export const Hero = () => {
             </motion.a>
             <motion.a
               className="button"
-              href="#Contact"
+              href="#Contacto"
               variants={textVariants}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">

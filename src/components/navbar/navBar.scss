@@ -14,6 +14,7 @@
     height: 100%;
 
     @include app.mobile {
+        max-width: 100%;
         justify-content: flex-end;
         padding: 20px;
     }

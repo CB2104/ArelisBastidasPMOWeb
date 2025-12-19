@@ -66,7 +66,6 @@ export const Projection = () => {
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
         >
           <p>
             Visualice una organización donde la predictibilidad es la norma, no
