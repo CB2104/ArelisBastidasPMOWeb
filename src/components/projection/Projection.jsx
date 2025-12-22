@@ -49,7 +49,7 @@ export const Projection = () => {
         <div className="title">
           <img src="/people.webp" />
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>Imagina</motion.b> un
+            <motion.b whileHover={{ color: "#1895a8" }}>Imagina</motion.b> un
             futuro donde cada proyecto
           </h1>
         </div>
@@ -57,9 +57,9 @@ export const Projection = () => {
           <h1>
             {" "}
             se entrega
-            <motion.b whileHover={{ color: "orange" }}> a tiempo</motion.b> y
+            <motion.b whileHover={{ color: "#1895a8" }}> a tiempo</motion.b> y
             dentro del{" "}
-            <motion.b whileHover={{ color: "orange" }}> presupuesto.</motion.b>
+            <motion.b whileHover={{ color: "#1895a8" }}> presupuesto.</motion.b>
           </h1>
         </div>
       </motion.div>
@@ -85,7 +85,7 @@ export const Projection = () => {
             un sistema que transforma la incertidumbre en una ventaja calculada.
           </p>
           <br />
-          <a href="#Contact" className="btnContact">
+          <a href="#Contacto" className="btnContact">
             Contactanos
           </a>
         </motion.div>

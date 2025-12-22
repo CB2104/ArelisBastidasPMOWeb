@@ -4,7 +4,7 @@
 .heroComp {
   height: calc(100vh);
   overflow: hidden;
-  background: linear-gradient(180deg, c.$bgPrimary, c.$bgSecundary);
+  background: linear-gradient(180deg, c.$bgSecundary, c.$bgPrimary);
   position: relative;
 
   .compWrapper {
@@ -27,7 +27,7 @@
       justify-content: center;
       gap: 30px;
 
-       @include app.mobile {
+      @include app.mobile {
         height: 80%;
         width: 100%;
         gap: 10px;
@@ -57,7 +57,7 @@
         gap: 20px;
         padding-left: 10px;
         border-left: 5px solid c.$SecundaryFont;
-        @include app.mobile{
+        @include app.mobile {
           gap: 5px;
         }
 
@@ -67,8 +67,8 @@
           font-weight: 200;
 
           @include app.mobile {
-          font-size: 12px;
-        }
+            font-size: 12px;
+          }
         }
       }
 
@@ -92,8 +92,8 @@
           padding: 20px;
           border: 1px solid c.$border;
           border-radius: 10px;
-          background-color: transparent;
-          color: c.$PrimaryFont;
+          background-color: c.$buttom;
+          color: c.$border;
           margin-right: 20px;
           font-weight: 300;
           cursor: pointer;
@@ -110,15 +110,28 @@
           svg {
             width: 24px;
             height: 24px;
-            fill: white;
+            fill: c.$border;
             bottom: 0;
             font-size: 13px;
             transition: transform 0.3s ease;
           }
         }
         .button2:hover {
+          transition: background 0.5s ease, transform 0.2s ease;
+          background-color: c.$border;
+          border-color: c.$buttom;
+          color: c.$buttom;
           svg {
             transform: scale(1.3);
+            fill: c.$buttom;
+          }
+        }
+        .button2:active {
+          box-shadow: inset 1px 1px 4px #a7a7a7, inset -1px -1px 4px #ffffff;
+          transform: scale(0.98);
+          svg {
+            transform: scale(0.9);
+            fill: c.$buttom;
           }
         }
       }
@@ -159,7 +172,6 @@
         -webkit-box-shadow: 0px -5px 0px 0px rgba(255, 255, 255, 0.4);
         -moz-box-shadow: 0px -5px 0px 0px rgba(255, 255, 255, 0.4);
       }
-
     }
   }
 }

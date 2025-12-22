@@ -14,20 +14,20 @@ export const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <img src="/LogoArelisBastidas.png" alt="" />
+          <img src="/Logo-Arelis-Bastidas-Black.png" alt="" className="logo" />
         </motion.span>
         <div className="social">
           <a href="#">
-            <img src="/facebook.png" alt="" />
+            <p>Home</p>
           </a>
           <a href="#">
-            <img src="/instagram.png" alt="" />
+            Sobre Mi
           </a>
           <a href="#">
-            <img src="/youtube.png" alt="" />
+            <p>Servicios</p>
           </a>
           <a href="#">
-            <img src="/dribbble.png" alt="" />
+            <p>Blog</p>
           </a>
         </div>
       </div>

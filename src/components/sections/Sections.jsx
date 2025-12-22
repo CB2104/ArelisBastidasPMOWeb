@@ -14,7 +14,6 @@ const secVariants = {
     y: 0,
     transition: {
       duration: 0.8,
-      staggerChildren: 0.15,
     },
   },
 };

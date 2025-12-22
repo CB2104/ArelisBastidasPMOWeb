@@ -5,7 +5,6 @@ import { Parallax } from "./components/parallax/Parallax";
 import { Projection } from "./components/projection/Projection";
 import { HeroComp } from "./components/heroComp/HeroComp";
 import { Contact } from "./components/contact/Contact";
-import { Cursor } from "./components/cursor/Cursor";
 import { Footer } from "./components/footer/Footer";
 import { Sections } from "./components/sections/Sections";
 import { HeroResult } from "./components/heroResult/HeroResult";
@@ -13,7 +12,6 @@ import { HeroImpl } from "./components/heroImpl/HeroImpl";
 import { ArePortfolio } from "./components/arePortfolio/ArePortfolio";
 import "./App.scss";
 
-import { Services } from "./components/services/Services"
 
 
 const App = () => {
@@ -26,9 +24,6 @@ const App = () => {
       </section>
       <section>
         <HeroServ />
-      </section>
-      <section id="Objetivos">
-        <Parallax type="services" />
       </section>
       <section>
         <Projection />
@@ -44,9 +39,6 @@ const App = () => {
       </section>
       <section>
         <HeroImpl />
-      </section>
-      <section id="Enfoque">
-        <Parallax type="portfolio" />
       </section>
       <ArePortfolio />
       <section id="Contacto">

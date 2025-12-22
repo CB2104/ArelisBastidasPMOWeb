@@ -3,6 +3,7 @@
 
 .navbar {
   height: 100px;
+  background: c.$bgSecundary;
    //Revisar si es correcto, sino eliminar (tapa el logo - display: flex)
 
   .wrapper {
@@ -17,6 +18,11 @@
         max-width: 100%;
         justify-content: flex-end;
         padding: 20px;
+    }
+
+    .logo{
+      width: 60px;
+      height: 60px;
     }
 
     span {

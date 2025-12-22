@@ -9,7 +9,7 @@
     left: 0;
     padding-top: 50px;
     text-align: center;
-    color: c.$btnBg;
+    color: c.$SecundaryFont;
     font-size: 36px;
 
     @include app.mobile {
@@ -19,7 +19,8 @@
 
     .progressBar {
       height: 10px;
-      background-color: c.$bgBar;
+      background-color: c.$SecundaryFont;
+      border: 2px solid #83b6f4;
     }
   }
 
@@ -47,7 +48,7 @@
         flex-direction: column;
         height: 75%;
         position: relative;
-        background-color: #0c0c1d;
+        background: linear-gradient(180deg, c.$bgPrimary, c.$bgSecundary, c.$bgPrimary);
       }
 
       .imageContainer {
@@ -86,6 +87,7 @@
 
         h2 {
           font-size: 50px;
+          color: c.$buttom;
 
           @include app.mobile {
             font-size: 36px;
@@ -93,7 +95,7 @@
         }
 
         p {
-          color: c.$subProyection;
+          color: c.$DefaultFont;
           font-size: 20px;
 
           @include app.mobile {
@@ -102,12 +104,24 @@
         }
 
         button {
-          background-color: c.$btnBg;
-          border: none;
+          border: 1px solid c.$border;
+          background-color: c.$buttom;
+          color: c.$border;
           border-radius: 10px;
           padding: 10px;
           width: 200px;
           cursor: pointer;
+        }
+
+        button:hover {
+          transition: background 0.5s ease, transform 0.2s ease;
+          background-color: c.$border;
+          border-color: c.$buttom;
+          color: c.$buttom;
+        }
+        button:active {
+          box-shadow: inset 1px 1px 4px #a7a7a7, inset -1px -1px 4px #ffffff;
+          transform: scale(0.98);
         }
       }
     }

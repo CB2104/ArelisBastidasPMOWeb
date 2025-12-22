@@ -92,13 +92,27 @@
       button {
         padding: 20px;
         border: none;
-        background-color: c.$btnBg;
+        border: 1px solid c.$border;
+        border-radius: 10px;
+        background-color: c.$buttom;
+        color: c.$border;
         cursor: pointer;
         font-weight: 500;
 
         @include app.mobile {
           padding: 10px;
         }
+      }
+      button:hover {
+        transition: background 0.5s ease, transform 0.2s ease;
+        background-color: c.$border;
+        border-color: c.$buttom;
+        color: c.$buttom;
+        transform: scale(1.02);
+      }
+      button:active {
+        box-shadow: inset 1px 1px 4px #a7a7a7, inset -1px -1px 4px #ffffff;
+        transform: scale(0.98);
       }
     }
   }

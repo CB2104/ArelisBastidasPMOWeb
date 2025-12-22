@@ -34,15 +34,16 @@
       padding: 50px;
       border: 0.5px solid c.$subProyection;
       display: flex;
+      border-radius: 10px;
       flex-direction: column;
       justify-content: space-between;
-      transition: background 0.5s, transform 0.5s;
+      transition: background 0.9s, transform 0.5s;
 
       @include app.mobile {
         width: 100%;
-        border: none;
+        border: 0.5px solid c.$subProyection;
         gap: 5px;
-        padding: 0px;
+        padding: 5px;
       }
 
       svg {
@@ -52,7 +53,7 @@
         fill: c.$DefaultFont;
         margin-bottom: 20px;
         text-align: center;
-        transition: transform 0.5s ease;
+        transition: background 0.5s, transform 0.5s;
 
         @include app.mobile {
           flex-shrink: 0;
@@ -88,8 +89,9 @@
         padding: 20px;
         border: 1px solid c.$border;
         border-radius: 10px;
-        background-color: transparent;
-        color: c.$PrimaryFont;
+        background-color: c.$buttom;
+        transition: transform 0.3s ease;
+        color: c.$border;
         margin-right: 20px;
         font-weight: 300;
         cursor: pointer;
@@ -98,10 +100,10 @@
 
         @include app.mobile {
           font-size: 12px;
-          background-color: transparent;
-          border: 1px solid c.$btnBg;
+          background-color: c.$buttom;
+          border: 1px solid c.$border;
           border-radius: 5px;
-          color: c.$btnBg;
+          color: c.$border;
           width: 90%;
           padding: 8px;
           text-align: center;
@@ -125,17 +127,38 @@
         }
       }
       .button:hover {
-        svg {
-          transform: scale(1.3);
+        color: c.$buttom;
+        background-color: c.$border;
+        border: 1px solid c.$buttom;
+        transition: background 0.5s ease, transform 0.2s ease;
+        transform: scale(1.05);
+        svg:last-child {
+          fill: c.$buttom;
+          transform: scale(1.2);
         }
       }
+      .button:active {
+          box-shadow: inset 1px 1px 4px #a7a7a7, inset -1px -1px 4px #ffffff;
+          transform: scale(0.98);
+          svg:last-child {
+            transform: scale(0.9);
+            fill: c.$buttom;
+          }
+        }
     }
 
     .box:hover {
-      background-color: c.$bgSecundary;
-      box-shadow: 4px 4px 0px c.$PrimaryFont;
+      background: linear-gradient(180deg, c.$bgPrimary, c.$bgSecundary);
+      box-shadow: 4px 4px 0px c.$buttom;
       transition: transform 0.2s, box-shadow 0.2s;
       transform: translateY(-10px);
+      svg {
+        fill: c.$buttom;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      svg:last-child {
+        fill: c.$border;
+      }
     }
   }
 }

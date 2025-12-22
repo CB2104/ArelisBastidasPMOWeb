@@ -86,7 +86,7 @@ export const Hero = () => {
             </motion.a>
           </motion.div>
           <motion.img
-            src="/scroll.png"
+            src="/keydown.png"
             alt=""
             variants={textVariants}
             animate="scrollButton"
