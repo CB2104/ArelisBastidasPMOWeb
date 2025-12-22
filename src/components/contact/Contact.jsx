@@ -143,7 +143,7 @@ export const Contact = () => {
           <textarea rows={8} placeholder="Mensaje" name="message" />
           <button>Enviar</button>
           {error && "Error"}
-          {success && "Success"}
+          {success && "Enviado con éxito!"}
         </motion.form>
       </div>
     </motion.div>
